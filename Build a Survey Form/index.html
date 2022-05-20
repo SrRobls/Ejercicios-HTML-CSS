@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+
+        #title{
+            color: red;
+        }
+        .contenedor{
+            background-color:rgb(135, 243, 153);
+        }
+
+        #survey-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .deporte{
+            background-color: antiquewhite;
+        }
+
+        #comentario{
+            width: 30%;
+        }
+
+        #submit{
+            width: 50px;
+            height: 20px;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">I will go to realize a Survey Form using HTML and a pinch of CSS for the styles!</p>
+        <form action="#" id="survey-form">
+            <label id="name-label">
+                Nombre: 
+                <input type="text" name="name" id="name" placeholder="Nombre" required>
+            </label>
+            <label id="email-label">
+                Email: 
+                <input type="email" name="email" id="email" placeholder="Correo" pattern="^[a-zA-Z0-9_-]+@[a-zA-Z]+\..{2,}$" title="that email is incorrect" required>
+            </label>
+            <label id="number-label">
+                Numero: 
+                <input type="number" name="number" id="number" placeholder="Numero" min="5" max="1000" required>
+            </label>
+           <label>
+               ¿Cual es tu Pokemon favorito?
+                <select name="Pokemones" id="dropdown">
+                    <option value="Pikachu">Pikachu</option>
+                    <option value="Gengar">Gengar</option>
+                    <option value="Charizard">Charizard</option>
+                </select>
+           </label>
+           <div class="deporte">
+            <p id="description">Deporte Favorito</p>
+            <label for="futbol">Futbol</label>
+            <input type="radio" name="deporte" id="futbol" value="Futbol">
+            <label for="basque">Basquetball</label>
+            <input type="radio" name="deporte" id="basque" value="Basquetball">
+            <label for="voleybol">Voleybol</label>
+            <input type="radio" name="deporte" id="voleybol" value="Voleybol">
+
+            <p>¿Que te gusta?</p>
+            <label>
+                <input type="checkbox" name="gustar" value="comer">
+                Comer
+            </label>
+            <label>
+                <input type="checkbox" name="gustar" value="jugar">
+                Jugar
+            </label>
+            <label>
+                <input type="checkbox" name="gustar" value="dormir">
+                Dormir
+            </label>
+           </div>
+           <p>Comentario:</p>
+           <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribe un comentario"></textarea>
+
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
