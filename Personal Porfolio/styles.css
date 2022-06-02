@@ -1,0 +1,145 @@
+body{
+    background-color: beige;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+/* Navbar */
+
+#navbar{
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: darkorchid;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#navbar ul{
+    width: 400px;
+    display: flex;
+    position: block;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    list-style: none;
+}
+
+
+#navbar a{  
+    color: black;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    font-size: 1.3rem;
+}
+
+/* Welcome section */
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    background-color: aliceblue;
+    position: block;
+    margin: 0;
+    padding: 0;
+    right: 0px;
+    background-color: black;
+    color: white;
+}
+
+#welcome-section h1{
+    font-size: 5vw;
+}
+
+#welcome-section p{
+    font-size: 3vw;
+}
+
+/* projects */
+
+#projects{
+    width: 100%;
+    display: flex;
+    background-color: blueviolet;
+}
+
+#projects ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#projects li{
+    text-align: center;
+    width: 90%;
+    margin: 30px 0px;
+}
+
+#projects img{
+    width: 100%;
+    height: 50vw;
+}
+
+#projects a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+/* Contactame */
+
+#contactame{
+    width: 100%;
+    height: 40vh;
+}
+
+#contactame ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+
+#contactame img{
+    width: 70xp;
+    height: 70px;
+}
+
+/* Media Queries */
+
+@media (min-width: 600px){
+    #projects ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #projects a{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects img{
+        width: 50vh;
+        height: 40vh;
+    }
+
+
+}
